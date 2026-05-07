@@ -1,0 +1,116 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  background: #090968;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;        /* Makes it behave like a button */
+  color: white;
+  margin: 10px;
+  padding: 10px 20px;           /* Adds space inside (button look) */
+  text-decoration: none;
+  background-color: #003366;    /* Dark blue */
+  border-radius: 5px;           /* Rounded corners */
+  transition: 0.3s;             /* Smooth hover effect */
+}
+
+nav a:hover {
+  background-color: #0055aa;    /* Lighter blue on hover */
+  transform: scale(1.05);       /* Slight zoom effect */
+}
+
+nav a:active {
+  background-color: #001f4d;    /* Darker when clicked */
+}
+
+
+
+.slider {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
+}
+
+.slide {
+  width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  33% {margin-left: -100%;}
+  66% {margin-left: -200%;}
+}
+
+.products img {
+  width: 30%;
+  margin: 10px;
+}
+footer {
+  background-color: #003366;   /* Dark blue */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 8px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+footer a:hover {
+  background-color: #0055aa;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
